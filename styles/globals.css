@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --radius: 10px; }
+
+.container-card { @apply bg-white dark:bg-gray-900 rounded-2xl shadow-sm border border-gray-200/60 dark:border-gray-800/60; }
+.card-header { @apply px-5 py-4 border-b border-gray-200/60 dark:border-gray-800/60 flex items-center justify-between; }
+.card-body { @apply p-5; }
+.input { @apply w-full rounded-xl border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500; }
+.select { @apply input; }
+.button { @apply inline-flex items-center gap-2 rounded-xl bg-brand-600 text-white px-4 py-2 text-sm hover:bg-brand-700 transition-colors disabled:opacity-60 disabled:cursor-not-allowed; }
+.button-outline { @apply inline-flex items-center gap-2 rounded-xl border border-gray-300 dark:border-gray-700 px-4 py-2 text-sm hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors; }
+.badge { @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium; }
+
+/* Chart panel height */
+.chart-card { height: 320px; }
